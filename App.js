@@ -2,18 +2,15 @@ import React from "react"
 import Navbar from "./components/Navbar.js"
 import Hero from "./components/Hero.js"
 import Card from "./components/Card.js"
+import data from "./data"
 
 function App() {
     const cards = data.map(item => {
         return (
-            <Card 
+            <Card
                 key={item.id}
-                img={item.coverImg}
-                rating={item.stats.rating}
-                reviewCount={item.stats.reviewCount}
-                location={item.location}
-                title={item.title}
-                price={item.price}
+                item={item}
+                
             />
         )
     })        
@@ -22,7 +19,9 @@ function App() {
         <div>
             <Navbar />
             <Hero />
-            {cards}
+            <section className="cards-list">
+                {cards}
+            </section>
         </div>
     )
 }

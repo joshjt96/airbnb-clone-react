@@ -37,5 +37,18 @@ export default [
         },
         location: "Norway",
         openSpots: 3,
-    }
+    },
+    {
+        id: 4,
+        title: "The Title",
+        description: "The Description",
+        price: 550,
+        coverImg: "mountain-bike.png",
+        stats: {
+            rating: 4.9,
+            reviewCount: 20
+        },
+        location: "Sweden",
+        openSpots: 310,
+    },
 ]
